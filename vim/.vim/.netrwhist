@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/zachary/Dropbox/config-files'
+let g:netrw_dirhist_2='/home/zachary/Dropbox/config-files/editors'
+let g:netrw_dirhist_3='/home/zachary/Dropbox/config-files/editors/vim'
+let g:netrw_dirhist_4='/home/zachary/Dropbox/config-files/editors'
+let g:netrw_dirhist_5='/home/zachary/Dropbox/config-files/editors/vim'
