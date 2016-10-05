@@ -61,8 +61,6 @@ endif
 " In insert mode, tabbing forward and backward goes to next/previous tabstop
 set tabstop=4 shiftwidth=4 expandtab smarttab
 
-let NERDTreeShowHidden=1
-
 " Hide NERDTree by default
 let NERDTreeShowHidden=1
 
@@ -97,4 +95,9 @@ if has('gui_running')
     :set guioptions-=L  "remove left-hand scroll bar
     :set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 17 "set gfn? (get current font string)
     :set columns=999
+endif
+
+" Automatically source .vimrc upon save
+if has("autocmd")
+    autocmd bufwritepost .vimrc source $MYVIMRC
 endif
