@@ -4,6 +4,7 @@
 - abcde  
 - bash  
 - ranger  
+- sublime text  
 - terminator  
 - tmux  
 - vim  
