@@ -1,0 +1,32 @@
+{
+	"always_show_minimap_viewport": true,
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/User/SublimeLinter/Broadcast (SL).tmTheme",
+	"draw_white_space": "all",
+	"font_face": "Fira Code",
+	"font_size": 21,
+	"hot_exit": false,
+	"ignored_packages":
+	[
+		"Markdown",
+		"Origami",
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"itg_small_tabs": true,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
+	"remember_open_files": false,
+	"show_encoding": true,
+	"smart_indent": false,
+	"tab_size": 4,
+	"theme": "itg.flat.dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"use_simple_full_screen": true
+}
