@@ -18,6 +18,7 @@ Plugin 'kien/ctrlp.vim'
 Plugin 'mattn/emmet-vim'
 Plugin 'mustache/vim-mustache-handlebars'
 Plugin 'scrooloose/nerdTree'
+Plugin 'sirver/ultisnips'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-markdown'
@@ -89,22 +90,19 @@ nnoremap <C-H> <C-W><C-H>
 set hidden
 
 " Automatically source .vimrc upon save
-if has("autocmd")
-    autocmd bufwritepost .vimrc source $MYVIMRC
-endif
+"if has("autocmd")
+"    autocmd bufwritepost .vimrc source $MYVIMRC
+"endif
 
-" gVim settings
-if has('gui_running')
+" MacVim and gVim settings
+if has("gui_macvim") " settings for MacVim
+    :set guifont=Fira\ Code:h20
+    :colorscheme Tomorrow-Night
+elseif has("gui_running") " settings for gVim or other GUI-based vim
     :set guioptions-=T  "remove toolbar
     :set guioptions-=r  "remove right-hand scroll bar
     :set guioptions-=L  "remove left-hand scroll bar
     :set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 17 "set gfn? (get current font string)
     :set columns=999
     :colorscheme Tomorrow-Night-Bright
-endif
-
-" MacVim settings
-if has("gui_macvim")
-    :set guifont=Fira\ Code:h20
-    :colorscheme Tomorrow-Night
 endif
