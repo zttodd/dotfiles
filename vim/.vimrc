@@ -10,6 +10,8 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'VundleVim/Vundle.vim'
 
+" Vundle Plugins
+Plugin 'airblade/vim-gitgutter'
 Plugin 'chriskempson/vim-tomorrow-theme'
 Plugin 'honza/vim-snippets'
 Plugin 'kien/ctrlp.vim'
@@ -22,7 +24,6 @@ Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-surround'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'airblade/vim-gitgutter'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -43,7 +44,6 @@ set numberwidth=5
 
 syntax enable
 set background=dark
-:colorscheme Tomorrow-Night-Bright
 
 " Display invisible characters
 if has("patch710")
@@ -88,6 +88,11 @@ nnoremap <C-H> <C-W><C-H>
 " Create hidden buffers when file is exited before saving, without !
 set hidden
 
+" Automatically source .vimrc upon save
+if has("autocmd")
+    autocmd bufwritepost .vimrc source $MYVIMRC
+endif
+
 " gVim settings
 if has('gui_running')
     :set guioptions-=T  "remove toolbar
@@ -95,9 +100,11 @@ if has('gui_running')
     :set guioptions-=L  "remove left-hand scroll bar
     :set guifont=Ubuntu\ Mono\ derivative\ Powerline\ 17 "set gfn? (get current font string)
     :set columns=999
+    :colorscheme Tomorrow-Night-Bright
 endif
 
-" Automatically source .vimrc upon save
-if has("autocmd")
-    autocmd bufwritepost .vimrc source $MYVIMRC
+" MacVim settings
+if has("gui_macvim")
+    :set guifont=Fira\ Code:h20
+    :colorscheme Tomorrow-Night
 endif
