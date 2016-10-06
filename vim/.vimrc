@@ -23,6 +23,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-commentary'
 Plugin 'tpope/vim-markdown'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-unimpaired'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
 
@@ -88,11 +89,6 @@ nnoremap <C-H> <C-W><C-H>
 
 " Create hidden buffers when file is exited before saving, without !
 set hidden
-
-" Automatically source .vimrc upon save
-"if has("autocmd")
-"    autocmd bufwritepost .vimrc source $MYVIMRC
-"endif
 
 " MacVim and gVim settings
 if has("gui_macvim") " settings for MacVim
