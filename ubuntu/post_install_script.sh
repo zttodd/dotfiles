@@ -1,12 +1,26 @@
 #!/bin/bash
 
+# Add VirtualBox repository
+echo deb http://download.virtualbox.org/virtualbox/debian xenial contrib | sudo tee /etc/apt/sources.list.d/virtualbox.list
+
+# Add VirtualBox keys
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+wget -q https://www.virtualbox.org/download/oracle_vbox.asc -O- | sudo apt-key add -
+
+# Add Spotify key
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
+
+# Add Spotify repository
+echo deb http://repository.spotify.com stable non-free | sudo tee /etc/apt/sources.list.d/spotify.list
+
 # Update everything
 sudo apt update && sudo apt upgrade
 
 # Install software
 sudo apt install \
-    build-essential chromium-browser dconf-editor git gnome-tweak-tool \
-    htop libssl-dev ranger stow taskwarrior terminator tmux vim vim-gnome
+    build-essential chromium-browser dconf-editor dkms git gnome-tweak-tool \
+    htop libssl-dev php ranger spotify-client stow taskwarrior terminator tmux \
+    vim vim-gnome virtualbox-5.1
 
 # Install Powertop if this computer is a ThinkPad
 while true; do
