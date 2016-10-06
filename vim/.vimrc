@@ -90,6 +90,9 @@ nnoremap <C-H> <C-W><C-H>
 " Create hidden buffers when file is exited before saving, without !
 set hidden
 
+" Vim Snippets trigger setup
+let g:UltiSnipsExpandTrigger="<tab>"
+
 " MacVim and gVim settings
 if has("gui_macvim") " settings for MacVim
     :set guifont=Fira\ Code:h20
