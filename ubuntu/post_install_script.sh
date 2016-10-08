@@ -43,8 +43,9 @@ sudo apt update && sudo apt upgrade
 # Install software
 sudo apt install \
     build-essential chromium-browser conky dconf-editor dkms git gnome-tweak-tool \
-    google-chrome-stable htop libssl-dev opera-stable php ranger spotify-client stow \
-    taskwarrior terminator tmux vim vim-gnome virtualbox-5.1 xclip zsh
+    google-chrome-stable htop libssl-dev opera-stable php php-mbstring php-xml \
+    php-zip ranger spotify-client stow taskwarrior terminator tmux vim vim-gnome \
+    virtualbox-5.1 xclip zsh
 
 echo -en '\n';
 echo "==========================";

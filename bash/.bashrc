@@ -113,6 +113,9 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Node Version Manager  
+# Node Version Manager
 export NVM_DIR="/home/zachary/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# Composer
+export PATH="$HOME/.config/composer/vendor/bin:$PATH"
