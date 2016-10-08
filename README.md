@@ -3,6 +3,7 @@
 **these dotfiles can be installed with GNU stow**  
 - abcde  
 - bash  
+- conky  
 - ranger  
 - sublime text  
 - terminator  
