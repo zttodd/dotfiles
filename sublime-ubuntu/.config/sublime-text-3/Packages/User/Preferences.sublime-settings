@@ -1,35 +1,23 @@
 {
-    "always_show_minimap_viewport": true,
-    "auto_indent": true,
-    "bold_folder_labels": true,
-    "color_scheme": "Packages/Theme - itg.flat/itg.Monokai.tmTheme",
-    "draw_white_space": "all",
-    "font_face": "Fira Code",
-    "font_size": 16,
-    "ignored_packages":
-    [
-        "Vintage"
-    ],
-    "itg_small_tabs": true,
-    "line_padding_bottom": 3,
-    "line_padding_top": 3,
-    "overlay_scroll_bars": "enabled",
-    "show_encoding": true,
-    "smart_indent": false,
-    "tab_size": 4,
-    "theme": "itg.flat.dark.sublime-theme",
-    "translate_tabs_to_spaces": true,
-    "use_simple_full_screen": true
+	"always_show_minimap_viewport": true,
+	"auto_indent": true,
+	"bold_folder_labels": true,
+	"color_scheme": "Packages/Theme - itg.flat/itg.Monokai.tmTheme",
+	"draw_white_space": "all",
+	"font_face": "Fira Code",
+	"font_size": 16,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"itg_small_tabs": true,
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
+	"overlay_scroll_bars": "enabled",
+	"show_encoding": true,
+	"smart_indent": false,
+	"tab_size": 4,
+	"theme": "itg.flat.dark.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"use_simple_full_screen": true
 }
-
-/* 
- * packages
- *   AdvancedNewFile
- *   BracketHighlighter
- *   ColorSublime
- *   Emmet
- *   GitGutter
- *   Markdown Preview
- *   Material Theme
- *   PlainTasks
-*/
