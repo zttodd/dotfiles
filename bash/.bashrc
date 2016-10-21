@@ -119,3 +119,6 @@ export NVM_DIR="/home/zachary/.nvm"
 
 # Composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+
+# Auto "cd" when entering just a path
+shopt -s autocd
