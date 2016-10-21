@@ -55,8 +55,8 @@ echo "==========================";
 # Install NVM (Node Version Manager)
 while true; do
     echo -en '\n';
-    read -p "Would you like to install Node Version Manager (NVM)? (y/n) " yn
-    case $yn in
+    read -p "Would you like to install Node Version Manager (NVM)? (y/n) " nvmopt
+    case $nvmopt in
         [Yy]* ) curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.32.0/install.sh | bash; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
@@ -71,8 +71,8 @@ echo "========";
 # Install Powertop if this computer is a ThinkPad
 while true; do
     echo -en '\n';
-    read -p "Is this computer a ThinkPad? If so, let's install powertop to improve performance. (y/n) " thinkpad
-    case $thinkpad in
+    read -p "Is this computer a ThinkPad? If so, let's install powertop to improve performance. (y/n) " thinkpadopt
+    case $thinkpadopt in
         [Yy]* ) sudo apt install powertop; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
@@ -87,8 +87,8 @@ echo "========================";
 # Put Launcher at the left or bottom of screen
 while true; do
     echo -en '\n';
-    read -p "Would you like the Unity Launcher at the left or bottom of your screen? (l/b) " launcher
-    case $launcher in
+    read -p "Would you like the Unity Launcher at the left or bottom of your screen? (l/b) " launcheropt
+    case $launcheropt in
         [Ll]* ) gsettings set com.canonical.Unity.Launcher launcher-position Left; break;;
         [Bb]* ) gsettings set com.canonical.Unity.Launcher launcher-position Bottom; break;;
         * ) gsettings set com.canonical.Unity.Launcher launcher-position Left; break;;
@@ -103,8 +103,8 @@ echo "===========================";
 # Install CD ripping software if CD burner is available
 while true; do
     echo -en '\n';
-    read -p "Does this computer have a CD burner? (y/n) " cdburner
-    case $cdburner in
+    read -p "Does this computer have a CD burner? (y/n) " cdburneropt
+    case $cdburneropt in
         [Yy]* ) sudo apt install abcde flac; break;;
         [Nn]* ) break;;
         * ) echo "Please answer yes or no.";;
