@@ -11,7 +11,8 @@
 - vim  
 
 **Not config files; run these on Ubuntu or Debian to a few things up.**  
-- ubuntu/post-install-script.sh
+- debian/debian_post_install.sh
+- ubuntu/post_install_script.sh
 
 --- ✄ -----------------------
 
