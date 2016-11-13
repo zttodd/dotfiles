@@ -1,6 +1,6 @@
-# dotfiles  
+# Dotfiles  
 
-**these dotfiles can be installed with GNU stow**  
+**These dotfiles can be installed with GNU stow**  
 - abcde  
 - bash  
 - conky  
@@ -10,7 +10,7 @@
 - tmux  
 - vim  
 
-**not a config file; run this one on a fresh Ubuntu install to set some things up**  
+**Not config files; run these on Ubuntu or Debian to a few things up.**  
 - ubuntu/post-install-script.sh
 
 --- ✄ -----------------------
