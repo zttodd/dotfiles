@@ -5,4 +5,5 @@ sudo apt update && sudo apt upgrade
 
 # Install software
 sudo apt install \
-    autojump chromium git firmware-linux-nonfree ranger stow terminator
+    autojump chromium fonts-inconsolata git firmware-linux-nonfree ranger \
+    stow terminator
