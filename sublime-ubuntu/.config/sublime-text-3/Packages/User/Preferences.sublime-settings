@@ -2,22 +2,42 @@
 	"always_show_minimap_viewport": true,
 	"auto_indent": true,
 	"bold_folder_labels": true,
-	"color_scheme": "Packages/Theme - itg.flat/itg.Monokai.tmTheme",
+	"caret_extra_bottom": 1,
+	"caret_extra_top": 1,
+	"caret_extra_width": 1,
+	"caret_style": "blink",
+	"color_scheme": "Packages/Boxy Theme/schemes/Boxy Monokai.tmTheme",
 	"draw_white_space": "all",
-	"font_face": "Fira Code",
+	"fade_fold_buttons": false,
 	"font_size": 16,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
-	"itg_small_tabs": true,
-	"line_padding_bottom": 3,
-	"line_padding_top": 3,
+	"indent_guide_options":
+	[
+		"draw_normal",
+		"draw_active"
+	],
+	"line_padding_bottom": 2,
+	"line_padding_top": 2,
+	"match_brackets": false,
+	"match_brackets_angle": false,
+	"match_brackets_braces": false,
+	"match_brackets_content": false,
+	"match_brackets_square": false,
+	"match_tags": false,
 	"overlay_scroll_bars": "enabled",
 	"show_encoding": true,
+	"show_line_endings": true,
 	"smart_indent": false,
 	"tab_size": 4,
-	"theme": "itg.flat.dark.sublime-theme",
+	"theme": "Boxy Monokai.sublime-theme",
+	"theme_icons_atomized": true,
+	"theme_icons_materialized": false,
+	"theme_sidebar_font_xl": true,
+	"theme_size_lg": true,
+	"theme_tab_selected_underlined": true,
 	"translate_tabs_to_spaces": true,
 	"use_simple_full_screen": true
 }
