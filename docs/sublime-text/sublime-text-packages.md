@@ -7,25 +7,27 @@ https://packagecontrol.io/installation
 ## Packages  
 
 - AdvancedNewFile  
+- A File Icon  
+- Boxy Theme  
 - BracketHighlighter  
-- ColorSublime  
 - Emmet  
 - GitGutter  
 - Handlebars  
 - HTML-CSS-JS Prettify  
 - jQuery  
 - MarkdownHighlighting  
-- Material Theme  
 - PlainTasks  
 - Sass  
 - SideBarEnhancements  
 
 -----
 
+- ColorSublime  
 - Dayle Rees color schemes  
 - ITG.flat  
 - Laravel Blade Highlighter  
 - Markdown Preview  
+- Material Theme  
 - Origami  
 - PHP Getters and Setters  
 - SublimeCodeIntel  
