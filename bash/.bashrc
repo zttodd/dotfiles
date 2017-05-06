@@ -123,5 +123,7 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 # Auto "cd" when entering just a path
 shopt -s autocd
 
-# Source autojump
-. /usr/share/autojump/autojump.sh
+# Source autojump if on Ubuntu
+if [ -f /usr/share/autojump/autojump.sh ]; then
+    . /usr/share/autojump/autojump.sh
+fi
