@@ -10,26 +10,14 @@ https://packagecontrol.io/installation
 - A File Icon  
 - Boxy Theme  
 - BracketHighlighter  
+- ColorSublime  
 - Emmet  
 - GitGutter  
 - Handlebars  
 - HTML-CSS-JS Prettify  
 - jQuery  
+- Laravel Blade Highlighter  
 - MarkdownHighlighting  
 - PlainTasks  
 - Sass  
 - SideBarEnhancements  
-
------
-
-- ColorSublime  
-- Dayle Rees color schemes  
-- ITG.flat  
-- Laravel Blade Highlighter  
-- Markdown Preview  
-- Material Theme  
-- Origami  
-- PHP Getters and Setters  
-- SublimeCodeIntel  
-- SublimePHPCompanion  
-- Vintage Mode  
