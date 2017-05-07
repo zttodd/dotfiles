@@ -9,6 +9,7 @@
 - terminator  
 - tmux  
 - vim  
+- visual studio code  
 - zsh  
 
 --- ✄ -----------------------
