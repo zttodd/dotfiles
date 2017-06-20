@@ -1,7 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
     // Controls whether the editor should render whitespace characters
-    "editor.renderWhitespace": true,
+    "editor.renderWhitespace": "all",
 
     // Insert snippets when their prefix matches.
     "editor.tabCompletion": true,
