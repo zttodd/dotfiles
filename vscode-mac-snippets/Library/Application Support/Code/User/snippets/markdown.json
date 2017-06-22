@@ -21,5 +21,13 @@
             "✔ "
         ],
         "description": "Place a checkmark in the document at cursor."
-    }
+    },
+
+
+	"PlainTasks Horizontal Rule": {
+		"prefix": "cut--",
+		"body":[
+			"--- ✄ -----------------------  "
+		],
+		"description": "Place a horizontal rule in the style of PlainTasks."
 }
