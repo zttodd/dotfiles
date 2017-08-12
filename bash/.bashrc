@@ -120,6 +120,9 @@ export NVM_DIR="/home/zachary/.nvm"
 # Composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 
+# Yarn global fix
+export PATH="/usr/bin"
+
 # Auto "cd" when entering just a path
 shopt -s autocd
 
