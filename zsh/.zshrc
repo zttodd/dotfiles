@@ -2,7 +2,7 @@
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/home/zachary/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -80,11 +80,12 @@ source $ZSH/oh-my-zsh.sh
 source ~/.bash_aliases
 
 # Node Version Manager
-export NVM_DIR="/home/zachary/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 # Composer
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 
 # Local node_modules packages
 export PATH=./node_modules/.bin:$PATH

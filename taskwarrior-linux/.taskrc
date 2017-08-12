@@ -14,7 +14,7 @@
 data.location=~/tasks/home/.task # Home
 #data.location=~/tasks/work/.task # Work
 
-# Color theme (uncomment one to use)
+# Linux – Color theme (uncomment one to use)
 #include /usr/share/task/light-16.theme
 #include /usr/share/task/light-256.theme
 #include /usr/share/task/dark-16.theme
@@ -29,4 +29,3 @@ include /usr/share/task/dark-256.theme
 #include /usr/share/task/solarized-dark-256.theme
 #include /usr/share/task/solarized-light-256.theme
 #include /usr/share/task/no-color.theme
-

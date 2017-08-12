@@ -6,6 +6,7 @@
 - conky  
 - ranger  
 - sublime text  
+- taskwarrior
 - terminator  
 - tmux  
 - vim  
@@ -31,4 +32,4 @@ For each dotfile that needs to go in a directory (or directories) within the hom
 
 Here are the results of `stow sublime-linux`  
 
-`~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings -> ~/dotfiles/sublime-linux/.config/sublime-text-3/Packages/User/Preferences.sublime-settings`  
+`~/.config/sublime-text-3/Packages/User/Preferences.sublime-settings -> ~/dotfiles/sublime-linux/.config/sublime-text-3/Packages/User/Preferences.sublime-settings`
