@@ -6,10 +6,17 @@
     // Insert snippets when their prefix matches.
     "editor.tabCompletion": true,
     
+    // Controls the font family.
+    "editor.fontFamily": "'Fira Code'",
+
+    // Enables font ligatures
+    "editor.fontLigatures": true,
+
     // Controls the font size.
     "editor.fontSize": 19,
     
     // Controls after how many characters the editor will wrap to the next line. Setting this to 0 turns on viewport width wrapping
-    "editor.wordWrap": 120,
+    "editor.wordWrap": "wordWrapColumn",
+    "editor.wordWrapColumn": 120,
     "window.zoomLevel": 0
 }
