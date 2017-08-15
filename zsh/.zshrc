@@ -87,6 +87,9 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 export PATH="$HOME/.composer/vendor/bin:$PATH"
 
+# Local node_modules packages
+export PATH=./node_modules/.bin:$PATH
+
 # Source autojump if on Ubuntu
 if [ -f /usr/share/autojump/autojump.sh ]; then
     . /usr/share/autojump/autojump.sh
