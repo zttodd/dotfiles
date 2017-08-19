@@ -9,7 +9,7 @@ export ZSH=$HOME/.oh-my-zsh
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 
 # Favorites: af-magic, agnoster, gallois, josh
-ZSH_THEME="gianu"
+ZSH_THEME="modified-gianu"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"

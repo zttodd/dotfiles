@@ -4,6 +4,7 @@
 - abcde  
 - bash  
 - conky  
+- oh my zsh
 - ranger  
 - sublime text  
 - taskwarrior
