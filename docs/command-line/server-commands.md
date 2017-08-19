@@ -34,7 +34,7 @@
 
 ### fail2ban  
 
-**client status, see activated jails**  
+**view client status, see activated jails**  
 `sudo fail2ban-client status`  
 
 **view ban notices**  
@@ -68,21 +68,37 @@
 
 ## updating/upgrading  
 
-**show packages ready for upgrade**  
-`sudo apt upgrade --dry-run`  
+**show upgradable packages**  
+`sudo apt list --upgradable`  
 
 **view log for unattended upgrades**  
 `sudo less /var/log/unattended-upgrades/unattended-upgrades-dpkg.log`  
+
+**check if reboot is required**  
+`ls /var/run/restart-required/`  
 
 ---
 
 ## users  
 
+### logging in  
+
+**who is logged in**  
+`who`
+
 **view most recent login for each user on system**  
 `lastlog`  
+
+**listing of last logged in users**  
+`last`  
 
 **read btmp file (bad login attempts)**  
 `sudo lastb`  
 
 **read login records**  
 `sudo last -f "/var/log/wtmp"`  
+
+### groups  
+
+**see what groups the current user is in**  
+`groups`  
