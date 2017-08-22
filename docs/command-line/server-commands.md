@@ -86,13 +86,13 @@
 
 ### logging in  
 
-**who is logged in**  
+**who is currently logged in**  
 `who`
 
 **view most recent login for each user on system**  
 `lastlog`  
 
-**listing of last logged in users**  
+**view list of every user who has logged into the system**  
 `last`  
 
 **read btmp file (bad login attempts)**  
