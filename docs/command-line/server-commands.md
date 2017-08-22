@@ -5,6 +5,9 @@
 
 ## apache  
 
+**check apache status**  
+`sudo service apache2 status`  
+
 **check access logs**  
 `su -c "less /var/log/apache2/access.log"`  
 
