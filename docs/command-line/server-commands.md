@@ -3,6 +3,9 @@
 **Get current time**  
 `date +%H:%M:%S`  
 
+**Edit crontab file**  
+`crontab -e`  
+
 ## apache  
 
 **check apache status**  
