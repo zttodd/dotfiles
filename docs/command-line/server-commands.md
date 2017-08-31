@@ -6,6 +6,9 @@
 **Edit crontab file**  
 `crontab -e`  
 
+**System uptime**  
+`uptime -p`
+
 ## apache  
 
 **check apache status**  
