@@ -8,7 +8,6 @@ Have a look at the inspiration for this setup, as well as instructions for this 
 - abcde  
 - bash  
 - conky  
-- newsbeuter
 - oh my zsh
 - ranger  
 - sublime text  
@@ -20,6 +19,7 @@ Have a look at the inspiration for this setup, as well as instructions for this 
 - zsh  
 
 **These have to be installed manually.**  
+- mintty  
 - raspberry pi  
 
 --- ✄ -----------------------  
