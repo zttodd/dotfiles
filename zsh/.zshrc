@@ -90,11 +90,11 @@ export PATH="$HOME/.composer/vendor/bin:$PATH"
 # Local node_modules packages
 export PATH="./node_modules/.bin:$PATH"
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 # Add Yarn to path
 export PATH=~/.yarn/bin:$PATH
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Source autojump if on Ubuntu
 if [ -f /usr/share/autojump/autojump.sh ]; then
