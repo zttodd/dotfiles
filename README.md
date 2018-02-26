@@ -8,10 +8,11 @@ Have a look at the inspiration for this setup, as well as instructions for this 
 - abcde  
 - bash  
 - conky  
-- oh my zsh
+- oh my zsh  
+- neofetch  
 - ranger  
 - sublime text  
-- taskwarrior
+- taskwarrior  
 - terminator  
 - tmux  
 - vim  
