@@ -18,5 +18,5 @@
     font = Source Code Pro Medium 15
     foreground_color = "#a5a2a2"
     login_shell = True
-    palette = "#090300:#de584e:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#de584e:#01a252:#fded02:#01a0e4:#a16a94:#b5e4f4:#f7f7f7"
+    palette = "#090300:#de584e:#01a252:#fdf363:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#de584e:#01a252:#fdf363:#01a0e4:#a16a94:#b5e4f4:#f7f7f7"
     use_system_font = False
