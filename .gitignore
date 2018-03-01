@@ -4,3 +4,6 @@ ranger/.config/ranger/tagged
 
 vim/.vim/bundle
 vim/.vim/.netrwhist
+
+vim/.vim/autoload/**
+vim/.vim/plugged/**
