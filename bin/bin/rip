@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# http://box5256.temp.domains/~pathartl/blog/automated-ripping-to-flac-linux/
+
+while [ 1 ]
+do
+  eject /dev/sr0
+  echo "Insert Disc, then press the enter/return key."
+  read input
+  eject -t /dev/sr0
+  abcde
+done
