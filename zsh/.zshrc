@@ -8,6 +8,9 @@ if [[ -n $SSH_CONNECTION ]]; then
    export EDITOR='nano'
 fi
 
+# Aliases
+source $HOME/.zsh/aliases.zsh
+
 # oh-my-zsh
 source $HOME/.zsh/oh-my-zsh.zsh
 
@@ -21,7 +24,5 @@ source $HOME/.zsh/yarn.zsh
 # Ruby Version Manager (must be last)
 source $HOME/.zsh/rvm.zsh
 
-# Aliases
-source $HOME/.zsh/aliases.zsh
-
-neofetch
+# Neofetch
+source $HOME/.zsh/neofetch.zsh
