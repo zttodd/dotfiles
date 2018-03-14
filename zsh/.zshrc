@@ -10,6 +10,7 @@ fi
 
 # Aliases
 source $HOME/.zsh/aliases.zsh
+source $HOME/.zsh/security.zsh
 
 # oh-my-zsh
 source $HOME/.zsh/oh-my-zsh.zsh
