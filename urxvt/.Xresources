@@ -1,0 +1,30 @@
+URxvt.font:     	xft:source code pro:size=12:antialias=true
+URxvt.boldFont: 	xft:source code pro:bold:size=12:antialias=true
+
+URxvt.background: 	#090300
+URxvt.cursorColor: 	#a5a2a2
+URxvt.foreground: 	#a5a2a2
+
+URxvt.color0:       #090300
+URxvt.color8:       #5c5855
+
+URxvt.color1:       #de584e
+URxvt.color9:       #de584e
+
+URxvt.color2:       #01a252
+URxvt.color10:      #01a252
+
+URxvt.color3:       #fdf363
+URxvt.color11:      #fdf363
+
+URxvt.color4:       #01a0e4
+URxvt.color12:      #01a0e4
+
+URxvt.color5:       #a16a94
+URxvt.color13:      #a16a94
+
+URxvt.color6:       #b5e4f4
+URxvt.color14:      #b5e4f4
+
+URxvt.color7:       #a5a2a2
+URxvt.color15: 		#f7f7f7
