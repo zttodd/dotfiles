@@ -1,65 +1,46 @@
-#!/bin/sh
-# Copyright (C) 2014 Julien Bonjean <julien@bonjean.info>
+#!/usr/bin/env bash
 
-# This program is free software: you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation, either version 3 of the License, or
-# (at your option) any later version.
+################################
+# Shows info about the RAM
+#
+# Dependencies:
+# - [notify-send]
+#
+# @return {Number(%)}: RAM usage
+################################
 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-# GNU General Public License for more details.
+dir=$(dirname $0)
+source $dir/util.sh
 
-# You should have received a copy of the GNU General Public License
-# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+full=""
+short=""
+status=0
 
-TYPE="${BLOCK_INSTANCE:-mem}"
+exec 6< /proc/meminfo
+read a total b <&6
+read a free b <&6
+read a b c <&6
+read a buffer b <&6
+read a cached b <&6
 
-awk -v type=$TYPE '
-/^MemTotal:/ {
-    mem_total=$2
-}
-/^MemFree:/ {
-    mem_free=$2
-}
-/^Buffers:/ {
-    mem_free+=$2
-}
-/^Cached:/ {
-    mem_free+=$2
-}
-/^SwapTotal:/ {
-    swap_total=$2
-}
-/^SwapFree:/ {
-    swap_free=$2
-}
-END {
-    if (type == "swap") {
-        free=swap_free/1024/1024
-        used=(swap_total-swap_free)/1024/1024
-        total=swap_total/1024/1024
-    } else {
-        free=mem_free/1024/1024
-        used=(mem_total-mem_free)/1024/1024
-        total=mem_total/1024/1024
-    }
-    pct=used/total*100
+MEM=$(calc "100 * ($total - ($free + $buffer + $cached)) / $total")
 
-    # full text
-    printf("%.1fG/%.1fG (%.f%%)\n", used, total, pct)
+full="$MEM%"
+short=$full
 
-    # short text
-    printf("%.f%%\n", pct)
+if [ $MEM -ge 80 ]; then
+    status=33
+fi
 
-    # color
-    if (pct > 90) {
-        print("#FF0000\n")
-    } else if (pct > 80) {
-        print("#FFAE00\n")
-    } else if (pct > 70) {
-        print("#FFF600\n")
-    }
-}
-' /proc/meminfo
+case $BLOCK_BUTTON in
+    # right click: show packages
+    3)
+        n=16
+        summary=$(ps -eo pmem,pcpu,pid,comm --sort=-pmem | head -$n)
+        notify-send "Top $n RAM-eaters" "$summary"
+    ;;
+esac
+
+echo $full
+echo $short
+exit $status
