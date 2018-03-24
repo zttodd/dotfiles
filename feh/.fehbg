@@ -1,2 +1,2 @@
 #!/bin/sh
-'feh' '--randomize' '--bg-fill' '/home/zachary/Pictures/random-wallpaper' 
+'feh' '--randomize' '--bg-fill' '/home/zachary/Pictures/wallpaper' 
