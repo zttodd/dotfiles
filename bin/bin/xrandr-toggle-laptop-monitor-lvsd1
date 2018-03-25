@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# https://wiki.archlinux.org/index.php/xrandr
+
+intern=LVDS-1
+extern=VGA-1
+
+xrandr --output "$extern" --off --output "$intern" --auto
