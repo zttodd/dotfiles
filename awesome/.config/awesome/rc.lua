@@ -53,7 +53,7 @@ editor_cmd = terminal .. " -e " .. editor
 -- If you do not like this or do not have such a key,
 -- I suggest you to remap Mod4 to another key using xmodmap or other tools.
 -- However, you can use another modifier like Mod1, but it may interact with others.
-modkey = "Mod1"
+modkey = "Mod4"
 
 -- Table of layouts to cover with awful.layout.inc, order matters.
 awful.layout.layouts = {
@@ -221,7 +221,24 @@ awful.screen.connect_for_each_screen(function(s)
         s.mytasklist, -- Middle widget
         { -- Right widgets
             layout = wibox.layout.fixed.horizontal,
-            mykeyboardlayout,
+            require("battery-widget") {
+              ac_prefix = " ",
+              battery_prefix = " ",
+              limits = {
+                  { 25, "#F2777A" },
+                  { 50, "#FBA922"},
+                  {100, "#A6E22E" }
+              },
+              listen = true,
+              timeout = 10,
+              widget_text = "${AC_BAT}${color_on}${percent}%${color_off}",
+              tooltip_text = "Battery ${state}${time_est}\nCapacity: ${capacity_percent}%",
+              alert_threshold = 5,
+              alert_timeout = 0,
+              alert_title = "Low battery!",
+              alert_text = "${AC_BAT}${time_est}"
+            },
+            -- mykeyboardlayout,
             wibox.widget.systray(),
             mytextclock,
             s.mylayoutbox,
@@ -336,7 +353,28 @@ globalkeys = gears.table.join(
               {description = "lua execute prompt", group = "awesome"}),
     -- Menubar
     awful.key({ modkey }, "p", function() menubar.show() end,
-              {description = "show the menubar", group = "launcher"})
+              {description = "show the menubar", group = "launcher"}),
+
+    -- Pulseaudio volume controls
+    awful.key({}, "XF86AudioRaiseVolume", function()
+              awful.util.spawn("pactl set-sink-volume @DEFAULT_SINK@ +2%", false) end),
+    awful.key({}, "XF86AudioLowerVolume", function()
+              awful.util.spawn("pactl set-sink-volume @DEFAULT_SINK@ -2%", false) end),
+    awful.key({}, "XF86AudioMute", function()
+              awful.util.spawn("pactl set-sink-mute @DEFAULT_SINK@ toggle", false) end),
+
+    -- Playerctl song controls
+    awful.key({ modkey, "Control" }, "space", function()
+              awful.util.spawn("playerctl play-pause", false) end),
+    awful.key({ modkey, "Control" }, "Left", function()
+              awful.util.spawn("playerctl previous", false) end),
+    awful.key({ modkey, "Control" }, "Right", function()
+              awful.util.spawn("playerctl next", false) end),
+
+    -- Lock screen
+    awful.key({ "Control", "Mod1" }, "l", function()
+              awful.util.spawn("xscreensaver-command -lock", false) end)
+
 )
 
 clientkeys = gears.table.join(
@@ -563,3 +601,5 @@ end)
 client.connect_signal("focus", function(c) c.border_color = beautiful.border_focus end)
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
+
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")
