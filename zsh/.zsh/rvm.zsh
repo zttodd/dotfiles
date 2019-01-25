@@ -1,0 +1,1 @@
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH. Must be last PATH variable change.

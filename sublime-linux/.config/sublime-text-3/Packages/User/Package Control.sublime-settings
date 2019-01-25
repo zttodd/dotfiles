@@ -1,0 +1,22 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"Boxy Theme",
+		"BracketHighlighter",
+		"Colorsublime",
+		"Emmet",
+		"GitGutter",
+		"Handlebars",
+		"HTML-CSS-JS Prettify",
+		"MarkdownHighlighting",
+		"Package Control",
+		"Sass",
+		"SideBarEnhancements"
+	]
+}

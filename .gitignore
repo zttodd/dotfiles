@@ -1,6 +1,11 @@
+awesome/.config/awesome/battery-widget/**
+
 ranger/.config/ranger/bookmarks
 ranger/.config/ranger/history
 ranger/.config/ranger/tagged
 
 vim/.vim/bundle
 vim/.vim/.netrwhist
+
+vim/.vim/autoload/**
+vim/.vim/plugged/**

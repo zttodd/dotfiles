@@ -1,5 +1,5 @@
 [global_config]
-  title_transmit_bg_color = "#5b7fa6"
+  title_transmit_bg_color = "#2a2a2a"
 [keybindings]
 [layouts]
   [[default]]
@@ -12,11 +12,11 @@
 [plugins]
 [profiles]
   [[default]]
-    background_color = "#121212"
-    background_darkness = 0.6
-    background_image = /home/zachary/dotfiles/terminator/footer_lodyas.png
-    cursor_color = "#f34b00"
-    font = Inconsolata Medium 16
-    foreground_color = "#b3c9d7"
-    palette = "#191919:#ff355b:#b7e876:#ffc251:#76d4ff:#ba76e7:#6cbfb5:#c2c8d7:#191919:#ff355b:#b7e876:#ffc251:#76d5ff:#ba76e7:#6cbfb5:#c2c8d7"
+    background_color = "#090300"
+    background_image = None
+    cursor_color = "#a5a2a2"
+    font = Source Code Pro Medium 15
+    foreground_color = "#a5a2a2"
+    login_shell = True
+    palette = "#090300:#de584e:#01a252:#fdf363:#01a0e4:#a16a94:#b5e4f4:#a5a2a2:#5c5855:#de584e:#01a252:#fdf363:#01a0e4:#a16a94:#b5e4f4:#f7f7f7"
     use_system_font = False

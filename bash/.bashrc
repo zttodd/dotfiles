@@ -123,9 +123,6 @@ export PATH="$HOME/.config/composer/vendor/bin:$PATH"
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# Yarn global fix
-export PATH="/usr/bin"
-
 # Auto "cd" when entering just a path
 shopt -s autocd
 
