@@ -5,12 +5,13 @@
 	"color_scheme": "Packages/Colorsublime - Themes/Monokai.tmTheme",
 	"draw_white_space": "all",
 	"font_face": "Fira Code",
-	"font_size": 22,
+	"font_size": 19,
 	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Markdown",
 		"Origami",
+		"Sass",
 		"Vintage"
 	],
 	"indent_guide_options":
