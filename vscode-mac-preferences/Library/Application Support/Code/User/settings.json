@@ -3,8 +3,6 @@
   // Controls whether the editor should render whitespace characters
   "editor.renderWhitespace": "all",
 
-  "editor.formatOnSave": true,
-
   // Insert snippets when their prefix matches.
   "editor.tabCompletion": "on",
 
@@ -26,6 +24,9 @@
   "search.exclude": {
     "**/bower_components": false
   },
+  "editor.cursorBlinking": "smooth",
+  "prettier.requireConfig": true,
+  "editor.formatOnSave": true,
   "[markdown]": {
     "editor.tabSize": 4
   }
