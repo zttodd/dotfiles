@@ -1,3 +1,6 @@
 [user]
 	name = Zachary Todd
-	email = zttodd.github@gmail.com
+	email = github@zttodd.com
+[core]
+	editor = code --wait
+	excludesfile = /Users/zachary/.gitignore_global
