@@ -26,8 +26,10 @@
   },
   "editor.cursorBlinking": "smooth",
   "prettier.requireConfig": true,
-  "editor.formatOnSave": true,
   "[markdown]": {
     "editor.tabSize": 4
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   }
 }
