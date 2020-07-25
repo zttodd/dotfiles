@@ -21,7 +21,7 @@ source $HOME/.zsh/n-version-manager.zsh
 source $HOME/.zsh/pip.zsh
 
 # rbenv (ruby)
-source $HOME/.zsh/rvm.zsh
+source $HOME/.zsh/rbenv.zsh
 
 # Package managers
 source $HOME/.zsh/composer.zsh
