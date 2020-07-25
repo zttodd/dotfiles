@@ -29,3 +29,7 @@ source $HOME/.zsh/yarn.zsh
 
 # Run neofetch (only uncomment if neofetch is installed)
 # source $HOME/.zsh/neofetch.zsh
+
+# Windows Terminal (Using a Linux shell in WSL)
+# Other writable directories to bold, with cyan text, and a black background
+LS_COLORS='ow=01;36;40'
