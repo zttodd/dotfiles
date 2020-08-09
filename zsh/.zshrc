@@ -23,6 +23,9 @@ source $HOME/.zsh/pip.zsh
 # rbenv (ruby)
 source $HOME/.zsh/rbenv.zsh
 
+# Go
+source $HOME/.zsh/go.zsh
+
 # Package managers
 source $HOME/.zsh/composer.zsh
 source $HOME/.zsh/yarn.zsh
